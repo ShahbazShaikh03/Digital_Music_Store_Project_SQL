@@ -95,7 +95,7 @@ join track tr on il.track_id = tr.track_id
 join album al on tr.album_id = al.album_id
 join artist a on al.artist_id = a.artist_id
 group by 1,2,3,4
-order by Total_spent desc
+order by Total_spent desc;
 
 
 /*Q10: We want to find out the most popular music Genre for each country. 
@@ -114,7 +114,7 @@ join genre ge on tr.genre_id = ge.genre_id
 group by cu.country, genre_name, ge.genre_id
 order by cu.country, total_purchase desc)
 
-select * from most_popular_genre where rowno = 1
+select * from most_popular_genre where rowno = 1;
 
 
 /*Q11: Write a query that determines the customer that has spent the most on music for each country. 
@@ -129,5 +129,5 @@ join invoice i on cu.customer_id = i.customer_id
 group by 1,2,3,4
 order by cu.country, sum(i.total) desc)
 
-select * from customer_who_spent_most_amount where rowno = 1
+select * from customer_who_spent_most_amount where rowno = 1;
 
