@@ -1,2 +1,2 @@
-# SQL_Music_Store_Project
+# Music_Store_Project_SQL
 Project done using SQL
